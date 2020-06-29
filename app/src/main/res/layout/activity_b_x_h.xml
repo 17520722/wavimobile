@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/LL"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/colorActionBar">
+
+        <ImageView
+            android:id="@+id/bt_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:elevation="3dp"
+            android:gravity="center"
+            android:text="Bảng xếp hạng"
+            android:textColor="#000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/LL"
+        android:layout_above="@+id/RL"
+        android:background="@color/color_background"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image_avatar_event"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:elevation="3dp"
+                    android:src="@drawable/ic_bxh"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_nhom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_bg_Text"
+                android:paddingLeft="@dimen/textpading"
+                android:text="Tác phẩm tham gia"
+                android:textColor="@color/color_Text"
+                android:textSize="@dimen/textSize_title" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/RL"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/color_item_list">
+        <TextView
+            android:id="@+id/stt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:textSize="30dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_white"/>
+        <ImageView
+            android:id="@+id/image_avatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/stt"
+            android:layout_marginLeft="10dp"
+            android:elevation="3dp"
+            android:src="@drawable/anh" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/image_avatar"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên sự kiện"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/textSize_title" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/LL1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tint="@color/color_white"
+                        android:src="@drawable/ic_heart" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/color_white"
+                        android:text="10" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LL2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@id/LL1"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tint="@color/color_white"
+                        android:src="@drawable/ic_view" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/color_white"
+                        android:layout_marginLeft="10dp"
+                        android:text="112120" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

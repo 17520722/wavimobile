@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/LL"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/colorActionBar">
+
+        <ImageView
+            android:id="@+id/bt_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:elevation="3dp"
+            android:gravity="center"
+            android:text="Tên Nhóm"
+            android:textColor="#000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/LL"
+        android:background="@color/color_background"
+
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_avatar"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:elevation="3dp"
+                android:src="@drawable/anh"
+                app:civ_border_color="#61B6FA"
+                app:civ_border_width="2dp" />
+
+            <LinearLayout
+                android:id="@+id/linear_nhom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Tên nhóm"
+                    android:textColor="@color/color_white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_pen"
+                    android:tint="@color/color_white" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="(Nhóm kín/công khai)"
+                android:textColor="@color/color_white" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/bt_them"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_button_them"
+                    android:text="Thêm thành viên" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/bt_them"
+                    android:background="@drawable/round_button_roi"
+                    android:foreground="@drawable/ic_run"
+                    android:foregroundGravity="center" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_bg_Text"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/textpading">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giới thiệu"
+                    android:textColor="@color/color_Text"
+                    android:textSize="@dimen/textSize_title" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Mô tả chi tiết về nhóm"
+                    android:textColor="@color/color_white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_bg_Text"
+                android:orientation="vertical"
+                android:gravity=""
+                android:paddingLeft="@dimen/textpading">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thành viên"
+                    android:textColor="@color/color_Text"
+                    android:textSize="@dimen/textSize_title" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:elevation="3dp"
+                        android:src="@drawable/anh"
+                        app:civ_border_color="#61B6FA"
+                        app:civ_border_width="2dp" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:elevation="3dp"
+                        android:src="@drawable/anh"
+                        app:civ_border_color="#61B6FA"
+                        app:civ_border_width="2dp" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:elevation="3dp"
+                        android:src="@drawable/anh"
+                        app:civ_border_color="#61B6FA"
+                        app:civ_border_width="2dp" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:elevation="3dp"
+                        android:src="@drawable/anh"
+                        app:civ_border_color="#61B6FA"
+                        app:civ_border_width="2dp" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:elevation="3dp"
+                        android:src="@drawable/anh"
+                        app:civ_border_color="#61B6FA"
+                        app:civ_border_width="2dp" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:elevation="3dp"
+                        android:src="@drawable/ic_cham"
+                        app:civ_border_color="#61B6FA"
+                        app:civ_border_width="2dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_bg_Text"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/textpading">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thông tin hoạt động"
+                    android:textColor="@color/color_Text"
+                    android:textSize="@dimen/textSize_title" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Nhóm thành lập ngày: 2/2/2020"
+                    android:textColor="@color/color_white" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

@@ -9,7 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".DuyetTVActivity"></activity>
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity android:name=".BXHActivity" />
+        <activity android:name=".ManHinhChinhSuKienActivity" />
+        <activity android:name=".DanhSachThanhVienActivity" />
+        <activity android:name=".ThemThanhVienActivity" />
+        <activity android:name=".ThongTinNhomActivity" />
+        <activity android:name=".ManHinhChinhNhomThanhVienActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
