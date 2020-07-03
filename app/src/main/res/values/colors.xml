@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorPrimary">#73D6FB</color>
+    <color name="colorPrimaryDark">#73D6FB</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="colorActionBar">#73D6FB</color>
+    <color name="color_Text">#FFD073</color>
+    <color name="color_bg_Text">#2F2F2F</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_background">#121212</color>
+    <color name="color_item_list">#2E2E2E</color>
+    <color name="color_event_dangdienra">#91FF77</color>
+    <color name="color_event_ketthuc">#FF9191</color>
 </resources>

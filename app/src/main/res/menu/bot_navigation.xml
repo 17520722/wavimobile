@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/fragment_home"
+        android:icon="@drawable/home"
+        android:title="Trang chủ" />
+    <item
+        android:id="@+id/fragment_group"
+        android:icon="@drawable/group"
+        android:title="Nhóm" />
+    <item
+        android:id="@+id/fragment_event"
+        android:icon="@drawable/event"
+        android:title="Sự kiện" />
+    <item
+        android:id="@+id/fragment_profile"
+        android:icon="@drawable/event"
+        android:title="Cá nhân" />
+
+</menu>
