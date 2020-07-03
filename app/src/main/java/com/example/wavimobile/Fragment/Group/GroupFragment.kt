@@ -14,6 +14,7 @@ import com.example.wavimobile.Adapter.GroupLoiMoiAdapter
 import com.example.wavimobile.ManHinhChinhNhomThanhVienActivity
 import com.example.wavimobile.Models.NhomHienTai
 import com.example.wavimobile.R
+import com.example.wavimobile.TaoNhomActivity
 import kotlinx.android.synthetic.main.fragment_group.*
 import kotlinx.android.synthetic.main.fragment_group.rcv
 import kotlinx.android.synthetic.main.fragment_rcv.*
@@ -25,9 +26,6 @@ class GroupFragment : Fragment() {
     val colorHint = "#4F4F4F"
     var flag=0
 
-    //    private val a: GroupHienTaiAdapter by lazy {
-//        GroupHienTaiAdapter(this@GroupFragment, mutableListOf())
-//    }
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -39,41 +37,33 @@ class GroupFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //   rcv.setHasFixedSize(true)
-
         rcv.layoutManager = LinearLayoutManager(context)
         var list1 = ArrayList<NhomHienTai>()
-        list1.add(NhomHienTai("tên 1", 1))
-        list1.add(NhomHienTai("tên 2", 2))
-        list1.add(NhomHienTai("tên 3", 2))
-        list1.add(NhomHienTai("tên 4", 4))
-        list1.add(NhomHienTai("tên 5", 5))
-        list1.add(NhomHienTai("tên 6", 6))
-        list1.add(NhomHienTai("tên 7", 7))
-        list1.add(NhomHienTai("tên 8", 8))
-        list1.add(NhomHienTai("tên 9", 9))
+        list1.add(NhomHienTai("Tên nhóm 1", 1))
+        list1.add(NhomHienTai("Tên nhóm 2", 2))
+        list1.add(NhomHienTai("Tên nhóm 3", 2))
+        list1.add(NhomHienTai("Tên nhóm 4", 4))
+        list1.add(NhomHienTai("Tên nhóm 5", 5))
+        list1.add(NhomHienTai("Tên nhóm 6", 6))
+        list1.add(NhomHienTai("Tên nhóm 7", 7))
+        list1.add(NhomHienTai("Tên nhóm 8", 8))
+        list1.add(NhomHienTai("Tên nhóm 9", 9))
 
 
         var list2 = ArrayList<NhomHienTai>()
-        list2.add(NhomHienTai("Lời mời 1", 1))
-        list2.add(NhomHienTai("Lời mời 2", 2))
-        list2.add(NhomHienTai("Lời mời 3", 2))
-        list2.add(NhomHienTai("Lời mời 4", 4))
-        list2.add(NhomHienTai("Lời mời 5", 5))
-        list2.add(NhomHienTai("Lời mời 6", 6))
-        list2.add(NhomHienTai("Lời mời 7", 7))
-        list2.add(NhomHienTai("Lời mời 8", 8))
-        list2.add(NhomHienTai("Lời mời 9", 9))
+        list2.add(NhomHienTai("Tên nhóm mời 1", 1))
+        list2.add(NhomHienTai("Tên nhóm mời 2", 2))
+        list2.add(NhomHienTai("Tên nhóm mời 3", 2))
+        list2.add(NhomHienTai("Tên nhóm mời 4", 4))
+        list2.add(NhomHienTai("Tên nhóm mời 5", 5))
+        list2.add(NhomHienTai("Tên nhóm mời 6", 6))
+        list2.add(NhomHienTai("Tên nhóm mời 7", 7))
+        list2.add(NhomHienTai("Tên nhóm mời 8", 8))
+        list2.add(NhomHienTai("Tên nhóm mời 9", 9))
 
         var adap1 = GroupHienTaiAdapter(list1)
         var adap2 = GroupLoiMoiAdapter(list2)
 
-
-//        if (bNhomHienTai) {
-//
-//        } else {
-//
-//        }
         if (flag==0)
         {
             rcv.adapter=adap1
@@ -85,8 +75,6 @@ class GroupFragment : Fragment() {
 
         tv_NhomHienTai.setOnClickListener {
             if (!bNhomHienTai) {
-                startActivity(Intent(context,ManHinhChinhNhomThanhVienActivity::class.java))
-
                 rcv.adapter = adap1
                 rcv?.adapter?.notifyDataSetChanged()
                 // makeCurrentFragment(NhomHienTaiFragment)
@@ -106,24 +94,9 @@ class GroupFragment : Fragment() {
                 bNhomHienTai = false
             }
         }
+        btAdd.setOnClickListener{
+            startActivity(Intent(this.requireContext(),TaoNhomActivity::class.java))
+        }
 
-
-    }
-
-    //    private fun makeCurrentFragment(frag: Fragment) =
-//        childFragmentManager.beginTransaction().apply {
-//            replace(R.id.frameLayoutGroup, frag)
-//            commit()
-//        }
-    private fun create(): ArrayList<NhomHienTai> {
-
-        var list = ArrayList<NhomHienTai>()
-        list.add(NhomHienTai("tên", 2))
-        list.add(NhomHienTai("tênaaaaaaaaaaaaa", 3))
-        list.add(NhomHienTai("têaaaaaaaaaan", 4))
-        list.add(NhomHienTai("têaaaan", 5))
-        list.add(NhomHienTai("têaan", 6))
-        list.add(NhomHienTai("tên", 7))
-        return list
     }
 }
