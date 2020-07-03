@@ -32,7 +32,7 @@ class TaoNhomActivity : AppCompatActivity() {
 
         }
         bt_Tao.setOnClickListener{
-            startActivity(Intent(this@TaoNhomActivity,ManHinhChinhSuKienActivity::class.java))
+            startActivity(Intent(this@TaoNhomActivity,ManHinhChinhNhomThanhVienActivity::class.java))
         }
     }
 }
