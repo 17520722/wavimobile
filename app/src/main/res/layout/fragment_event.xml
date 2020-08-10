@@ -11,6 +11,7 @@
         android:id="@+id/RL"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -26,10 +27,13 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:paddingLeft="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
             android:layout_toLeftOf="@id/btAdd"
             android:layout_toRightOf="@id/image_search"
             android:background="@drawable/round_search"
-            android:hint="Tìm kiếm" />
+            android:hint="Tìm kiếm"
+            android:textSize="15sp"/>
 
         <Button
             android:id="@+id/btAdd"

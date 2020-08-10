@@ -4,6 +4,7 @@
     <dimen name="size_button_back">30dp</dimen>
     <dimen name="size_button_back_w">40dp</dimen>
     <dimen name="textpading">10dp</dimen>
+    <dimen name="padding_titile">5dp</dimen>
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
