@@ -172,11 +172,16 @@
                         android:text="Thêm video của bạn"
                         android:textColor="@color/color_white" />
 
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:background="@drawable/ic_mayquay" />
+<!--                    <Button-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center_horizontal"-->
+<!--                        android:background="@drawable/ic_mayquay" />-->
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_mayquay"
+                        android:layout_gravity="center_horizontal"/>
 
 
                 </LinearLayout>
