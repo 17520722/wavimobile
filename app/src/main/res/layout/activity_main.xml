@@ -27,7 +27,8 @@
         android:layout_height="?actionBarSize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="@color/color_white"
+        android:background="@color/color_item_list"
         app:layout_constraintHorizontal_bias="0.0"
-        app:menu="@menu/bot_navigation" />
+        app:menu="@menu/bot_navigation"
+        app:itemIconTint="@color/color_white"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

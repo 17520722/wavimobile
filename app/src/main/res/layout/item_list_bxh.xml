@@ -26,15 +26,17 @@
                 android:textColor="@color/color_white"
                 android:textSize="30dp" />
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/image_avatar"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="10dp"
                 android:layout_toRightOf="@id/stt"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="15dp"
                 android:elevation="3dp"
-                android:src="@drawable/anh" />
+                android:src="@drawable/anh"
+                app:civ_border_color="#61B6FA"
+                app:civ_border_width="2dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"

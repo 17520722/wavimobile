@@ -26,11 +26,15 @@
                 android:elevation="3dp"
                 android:orientation="vertical">
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image_avatar"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:layout_gravity="center_horizontal"
-                    android:src="@drawable/anh" />
+                    android:layout_gravity="center"
+                    android:elevation="3dp"
+                    android:src="@drawable/anh"
+                    app:civ_border_color="#61B6FA"
+                    app:civ_border_width="2dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
