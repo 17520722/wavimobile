@@ -40,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/image_avatar_event"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
@@ -69,10 +69,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
-                    android:background="#E0E0E0"
                     android:hint="Tên Nhóm"
                     android:padding="10dp"
-                    android:textSize="@dimen/textSize_title" />
+                    android:textSize="@dimen/textSize_title"
+                    android:background="@drawable/round_creategroup"/>
 
                 <Spinner
                     android:id="@+id/edQuyenRiengTu"
@@ -81,7 +81,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="20dp"
-                    android:background="#E0E0E0"
+                    android:background="@drawable/round_creategroup"
                     android:entries="@array/myarray"
                     android:foreground="@drawable/ic_down"
                     android:foregroundGravity="center_vertical|right"
@@ -98,7 +98,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="20dp"
-                    android:background="#E0E0E0"
+                    android:background="@drawable/round_creategroup"
                     android:hint="Mô tả"
                     android:padding="10dp"
                     android:textSize="@dimen/textSize_title"
@@ -133,8 +133,8 @@
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="20dp"
-                android:background="@color/colorActionBar"
                 android:gravity="center"
+                android:background="@drawable/round_button"
                 android:text="Tạo" />
         </RelativeLayout>
 

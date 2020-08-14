@@ -45,7 +45,7 @@
                     android:text=" Tên nhóm"
                     android:layout_marginLeft="10dp"
                     android:textColor="@color/color_white"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:id="@+id/tV_Name"/>
                 <TextView android:id="@+id/tV_SoVideo"
                     android:layout_width="match_parent"
@@ -53,7 +53,7 @@
                     android:layout_marginLeft="10dp"
                     android:text="Có x video mới"
                     android:textColor="@color/color_Text"
-                    android:textSize="16sp"
+                    android:textSize="14sp"
                     android:gravity="start|center_vertical"/>
             </LinearLayout>
         </RelativeLayout>
