@@ -14,13 +14,13 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:background="@color/color_item_list">
-
+            android:background="@color/color_item_list"
+>
 
             <LinearLayout
                 android:id="@+id/a"
                 android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_height="match_parent"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="10dp"
                 android:elevation="3dp"
@@ -30,6 +30,7 @@
                     android:id="@+id/image_avatar"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
+                    android:paddingTop="5dp"
                     android:layout_gravity="center"
                     android:elevation="3dp"
                     android:src="@drawable/anh"

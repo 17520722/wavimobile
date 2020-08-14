@@ -71,11 +71,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
-                    android:background="@drawable/round_search"
+                    android:hint="Tên Nhóm"
+                    android:padding="10dp"
+                    android:textSize="@dimen/textSize_title"
+                    android:background="@drawable/round_creategroup"
                     android:paddingTop="12dp"
                     android:paddingBottom="12dp"
-                    android:hint="Tên Nhóm"
-                    android:textSize="@dimen/textSize_title"
                     android:paddingLeft="20dp" />
 
                 <Spinner
@@ -85,17 +86,15 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="20dp"
-                    android:background="@drawable/round_search"
+                    android:background="@drawable/round_creategroup"
                     android:entries="@array/myarray"
                     android:foreground="@drawable/ic_down"
                     android:foregroundGravity="center_vertical|right"
-
                     android:foregroundTint="#585858"
                     android:paddingTop="15dp"
                     android:paddingBottom="15dp"
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
-
                     android:spinnerMode="dropdown"
                     android:visibility="gone" />
 
@@ -106,7 +105,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="20dp"
-                    android:background="@drawable/round_search"
+                    android:background="@drawable/round_creategroup"
                     android:hint="Mô tả"
                     android:paddingTop="12dp"
                     android:paddingBottom="12dp"

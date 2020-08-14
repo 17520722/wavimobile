@@ -23,7 +23,9 @@
             <RelativeLayout
 
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
 
                 <de.hdodenhof.circleimageview.CircleImageView
 
@@ -32,8 +34,11 @@
                     android:layout_height="48dp"
                     android:elevation="3dp"
                     android:src="@drawable/anh"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
                     app:civ_border_color="#61B6FA"
-                    app:civ_border_width="2dp" />
+                    app:civ_border_width="2dp"
+                    />
 
                 <TextView
                     android:layout_width="wrap_content"

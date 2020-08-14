@@ -28,10 +28,13 @@
             android:layout_height="wrap_content"
             android:layout_toLeftOf="@id/btAdd"
             android:paddingLeft="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
             android:layout_toRightOf="@id/image_search"
             android:background="@drawable/round_search"
             android:layout_centerVertical="true"
             android:hint="Tìm kiếm"
+            android:textSize="15sp"
             />
 
         <Button

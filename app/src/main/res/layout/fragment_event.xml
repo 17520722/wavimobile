@@ -27,10 +27,13 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:paddingLeft="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
             android:layout_marginRight="20dp"
             android:layout_toRightOf="@id/image_search"
             android:background="@drawable/round_search"
-            android:hint="Tìm kiếm" />
+            android:hint="Tìm kiếm"
+            android:textSize="15sp"/>
 
 
     </RelativeLayout>
