@@ -10,9 +10,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="2dp"
-        android:layout_margin="5dp"
-        >
+        android:layout_marginTop="3dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -32,30 +30,29 @@
                     android:id="@+id/image_avatar"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:elevation="3dp"
-                    android:src="@drawable/anh"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
+                    android:elevation="3dp"
+                    android:src="@drawable/anh"
                     app:civ_border_color="#61B6FA"
-                    app:civ_border_width="2dp"
-                    />
+                    app:civ_border_width="2dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_toRightOf="@id/image_avatar"
-                    android:textColor="@color/color_white"
                     android:text="Tên người dùng"
+                    android:textColor="@color/color_white"
                     android:textSize="@dimen/textSize_title" />
 
             </RelativeLayout>
 
-           <ImageView
-               android:layout_width="match_parent"
-               android:layout_height="400dp"
-               android:background="#000"
-               android:src="@drawable/anh2"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:background="#000"
+                android:src="@drawable/anh2" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -73,16 +70,16 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:tint="@color/color_white"
-                        android:src="@drawable/ic_heart" />
+                        android:src="@drawable/ic_heart"
+                        android:tint="@color/color_white" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/color_white"
                         android:layout_gravity="center_vertical"
                         android:layout_marginLeft="10dp"
-                        android:text="10" />
+                        android:text="10"
+                        android:textColor="@color/color_white" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -98,16 +95,16 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:tint="@color/color_white"
-                        android:src="@drawable/ic_view" />
+                        android:src="@drawable/ic_view"
+                        android:tint="@color/color_white" />
 
                     <TextView
                         android:layout_width="wrap_content"
-                        android:textColor="@color/color_white"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_marginLeft="10dp"
-                        android:text="112120" />
+                        android:text="112120"
+                        android:textColor="@color/color_white" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -121,16 +118,16 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:tint="@color/color_white"
-                        android:src="@drawable/ic_reward" />
+                        android:src="@drawable/ic_reward"
+                        android:tint="@color/color_white" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
-                        android:textColor="@color/color_white"
                         android:layout_marginLeft="10dp"
-                        android:text="1" />
+                        android:text="1"
+                        android:textColor="@color/color_white" />
                 </LinearLayout>
 
             </RelativeLayout>

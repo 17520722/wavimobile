@@ -96,8 +96,8 @@
                     android:id="@+id/bt_them"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="5dp"
                     android:background="@drawable/round_button_them"
+                    android:padding="5dp"
                     android:text="Thêm thành viên" />
 
                 <Button
@@ -111,9 +111,9 @@
             </RelativeLayout>
 
             <LinearLayout
-                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:background="@color/color_bg_Text"
                 android:orientation="vertical"
                 android:paddingLeft="@dimen/textpading">
@@ -137,8 +137,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:background="@color/color_bg_Text"
-                android:orientation="vertical"
                 android:gravity=""
+                android:orientation="vertical"
                 android:paddingLeft="@dimen/textpading">
 
                 <TextView
@@ -151,8 +151,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
                     android:gravity="center_horizontal"
+                    android:orientation="horizontal"
                     android:padding="10dp">
 
                     <de.hdodenhof.circleimageview.CircleImageView

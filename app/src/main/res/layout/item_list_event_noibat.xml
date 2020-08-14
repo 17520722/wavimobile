@@ -14,8 +14,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:background="@color/color_item_list"
->
+            android:background="@color/color_item_list">
 
             <LinearLayout
                 android:id="@+id/a"
@@ -30,9 +29,9 @@
                     android:id="@+id/image_avatar"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:paddingTop="5dp"
                     android:layout_gravity="center"
                     android:elevation="3dp"
+                    android:paddingTop="5dp"
                     android:src="@drawable/anh"
                     app:civ_border_color="#61B6FA"
                     app:civ_border_width="2dp" />
@@ -42,8 +41,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="Tên người tạo"
-                    android:textSize="10dp"
-                    android:textColor="#9C9C9C" />
+                    android:textColor="#9C9C9C"
+                    android:textSize="10dp" />
             </LinearLayout>
 
             <LinearLayout

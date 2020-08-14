@@ -1,5 +1,6 @@
 package com.example.wavimobile
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -17,6 +18,7 @@ class ManHinhChinhSuKienActivity : AppCompatActivity() {
         bt_back.setOnClickListener{
             onBackPressed()
         }
+        val text=intent.getStringExtra("text")
         var list1 = ArrayList<SuKien>()
         list1.add(SuKien("", "", 0))
         list1.add(SuKien("", "", 0))
@@ -27,11 +29,15 @@ class ManHinhChinhSuKienActivity : AppCompatActivity() {
         list1.add(SuKien("", "", 0))
         list1.add(SuKien("", "", 0))
         list1.add(SuKien("", "", 0))
-
+        textSoNguoiTG.text=text
         var adap1 = VideoAdapter(list1)
         rcv.run {
             adapter=adap1
             layoutManager= LinearLayoutManager(context)
+        }
+        bxh.setOnClickListener{
+            val intent = Intent(this@ManHinhChinhSuKienActivity, BXHActivity::class.java)
+            startActivity(intent)
         }
     }
 }
