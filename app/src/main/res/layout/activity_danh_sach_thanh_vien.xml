@@ -8,6 +8,7 @@
     tools:context=".Fragment.Group.GroupFragment">
 
     <RelativeLayout
+        android:layout_marginTop="10dp"
         android:id="@+id/RL"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

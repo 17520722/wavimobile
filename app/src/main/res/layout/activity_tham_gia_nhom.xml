@@ -29,15 +29,14 @@
             android:textSize="20sp" />
     </RelativeLayout>
 
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/LL"
         android:background="@color/color_background"
-
-        android:fillViewport="true">
+        android:overScrollMode="never">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -48,6 +47,8 @@
                 android:id="@+id/image_avatar"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="15dp"
                 android:elevation="3dp"
@@ -75,8 +76,7 @@
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="10dp"
-                    android:src="@drawable/ic_pen"
+                    android:src="@drawable/ic_next"
                     android:tint="@color/color_white" />
             </LinearLayout>
 
@@ -86,7 +86,6 @@
                 android:layout_gravity="center"
                 android:text="(công khai)"
                 android:textColor="@color/color_white" />
-
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -96,24 +95,18 @@
                     android:id="@+id/bt_them"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="5dp"
-                    android:background="@drawable/round_button_them"
-                    android:text="Thêm thành viên" />
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:background="@drawable/round_button"
+                    android:text="Tham Gia Ngay" />
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/bt_them"
-                    android:background="@drawable/round_button_roi"
-                    android:foreground="@drawable/ic_run"
-                    android:foregroundGravity="center" />
 
             </RelativeLayout>
 
             <LinearLayout
-                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:background="@color/color_bg_Text"
                 android:orientation="vertical"
                 android:paddingLeft="@dimen/textpading">
@@ -137,8 +130,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:background="@color/color_bg_Text"
-                android:orientation="vertical"
                 android:gravity=""
+                android:orientation="vertical"
                 android:paddingLeft="@dimen/textpading">
 
                 <TextView
@@ -151,8 +144,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
                     android:gravity="center_horizontal"
+                    android:orientation="horizontal"
                     android:padding="10dp">
 
                     <de.hdodenhof.circleimageview.CircleImageView
@@ -232,8 +225,25 @@
                     android:text="Nhóm thành lập ngày: 2/2/2020"
                     android:textColor="@color/color_white" />
             </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/color_bg_Text"
+                android:paddingLeft="@dimen/textpading"
+                android:text="Video Nhóm"
+                android:textColor="@color/color_Text"
+                android:textSize="@dimen/textSize_title" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv"
+                android:layout_width="wrap_content"
+                android:focusable="false"
+                android:layout_height="wrap_content" />
         </LinearLayout>
 
 
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
 </RelativeLayout>

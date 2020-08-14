@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.wavimobile.ManHinhChinhNhomThanhVienActivity
 import com.example.wavimobile.Models.NhomHienTai
 import com.example.wavimobile.R
+import com.example.wavimobile.ThamGiaNhomActivity
 
 class GroupLoiMoiAdapter(val list: ArrayList<NhomHienTai>) :
     RecyclerView.Adapter<GroupLoiMoiAdapter.ViewHolder>() {
@@ -32,7 +33,7 @@ class GroupLoiMoiAdapter(val list: ArrayList<NhomHienTai>) :
         var nhom: NhomHienTai = list[position]
         holder?.tvName.text = nhom.name
         holder?.carItem.setOnClickListener {
-            context.startActivity(Intent(context, ManHinhChinhNhomThanhVienActivity::class.java))
+            context.startActivity(Intent(context, ThamGiaNhomActivity::class.java))
         }
 
     }

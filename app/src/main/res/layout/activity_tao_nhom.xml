@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_height="match_parent">
 
     <RelativeLayout
@@ -41,14 +42,15 @@
             android:layout_height="wrap_content">
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/image_avatar_event"
+                android:id="@+id/image_avatar"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:layout_centerHorizontal="true"
-                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="15dp"
                 android:elevation="3dp"
-                android:src="@drawable/anh" />
+                android:src="@drawable/anh"
+                app:civ_border_color="#61B6FA"
+                app:civ_border_width="2dp" />
 
         </RelativeLayout>
 
@@ -72,7 +74,10 @@
                     android:hint="Tên Nhóm"
                     android:padding="10dp"
                     android:textSize="@dimen/textSize_title"
-                    android:background="@drawable/round_creategroup"/>
+                    android:background="@drawable/round_creategroup"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="20dp" />
 
                 <Spinner
                     android:id="@+id/edQuyenRiengTu"
@@ -88,6 +93,8 @@
                     android:foregroundTint="#585858"
                     android:paddingTop="15dp"
                     android:paddingBottom="15dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
                     android:spinnerMode="dropdown"
                     android:visibility="gone" />
 
@@ -100,7 +107,9 @@
                     android:layout_marginRight="20dp"
                     android:background="@drawable/round_creategroup"
                     android:hint="Mô tả"
-                    android:padding="10dp"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="20dp"
                     android:textSize="@dimen/textSize_title"
                     android:visibility="gone" />
 
@@ -128,13 +137,13 @@
 
             <Button
                 android:id="@+id/bt_Tao"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="20dp"
-                android:gravity="center"
                 android:background="@drawable/round_button"
+                android:gravity="center"
                 android:text="Tạo" />
         </RelativeLayout>
 
