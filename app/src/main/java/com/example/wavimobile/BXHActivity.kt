@@ -11,5 +11,6 @@ class BXHActivity : AppCompatActivity() {
         bt_back.setOnClickListener{
             onBackPressed()
         }
+
     }
 }

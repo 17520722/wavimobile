@@ -21,7 +21,6 @@ import kotlinx.android.synthetic.main.fragment_rcv.*
 
 class GroupFragment : Fragment() {
     var bNhomHienTai = true
-
     val colorSelected = "#FFFFFF"
     val colorHint = "#4F4F4F"
     var flag=0
@@ -67,6 +66,13 @@ class GroupFragment : Fragment() {
         if (flag==0)
         {
             rcv.adapter=adap1
+            tv_NhomHienTai.setTextColor(Color.parseColor(colorSelected))
+            tv_LoiMoi.setTextColor(Color.parseColor(colorHint))
+        }
+        else{
+            rcv.adapter=adap2
+            tv_NhomHienTai.setTextColor(Color.parseColor(colorHint))
+            tv_LoiMoi.setTextColor(Color.parseColor(colorSelected))
         }
         rcv.setOnClickListener {
             //startActivity(Intent(context,ManHinhChinhNhomThanhVienActivity::class.java))
@@ -80,6 +86,7 @@ class GroupFragment : Fragment() {
                 // makeCurrentFragment(NhomHienTaiFragment)
                 tv_NhomHienTai.setTextColor(Color.parseColor(colorSelected))
                 tv_LoiMoi.setTextColor(Color.parseColor(colorHint))
+                flag=0
                 bNhomHienTai = true
             }
         }
@@ -91,6 +98,7 @@ class GroupFragment : Fragment() {
                 //  makeCurrentFragment(loiMoiFragment)
                 tv_NhomHienTai.setTextColor(Color.parseColor(colorHint))
                 tv_LoiMoi.setTextColor(Color.parseColor(colorSelected))
+                flag=1
                 bNhomHienTai = false
             }
         }

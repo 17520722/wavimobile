@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
@@ -14,8 +16,9 @@ import com.example.wavimobile.Models.NhomHienTai
 import com.example.wavimobile.R
 import com.example.wavimobile.ThamGiaNhomActivity
 
-class GroupLoiMoiAdapter(val list: ArrayList<NhomHienTai>) :
+class GroupLoiMoiAdapter(var list: ArrayList<NhomHienTai>) :
     RecyclerView.Adapter<GroupLoiMoiAdapter.ViewHolder>() {
+
 
     lateinit var context: Context
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -35,13 +38,21 @@ class GroupLoiMoiAdapter(val list: ArrayList<NhomHienTai>) :
         holder?.carItem.setOnClickListener {
             context.startActivity(Intent(context, ThamGiaNhomActivity::class.java))
         }
+        holder?.btChapNhan.setOnClickListener {
+            context.startActivity(Intent(context, ManHinhChinhNhomThanhVienActivity::class.java))
+        }
+        holder?.btTuChoi.setOnClickListener {
+            list.removeAt(position)
+            notifyDataSetChanged()
+        }
+
 
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val tvName = itemView.findViewById<TextView>(R.id.tV_Name_loimoi)
         val carItem = itemView.findViewById<CardView>(R.id.cardGroup)
-        //   val btChapNhan = itemView.findViewById<Button>(R.id.bt_ChapNhan)
-        //    val btTuChoi = itemView.findViewById<Button>(R.id.bt_TuChoi)
+        val btChapNhan = itemView.findViewById<Button>(R.id.bt_ChapNhan)
+        val btTuChoi = itemView.findViewById<ImageView>(R.id.bt_TuChoi)
     }
 }
