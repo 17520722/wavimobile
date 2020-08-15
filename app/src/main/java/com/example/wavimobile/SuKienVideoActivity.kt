@@ -6,15 +6,12 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.wavimobile.Adapter.VideoAdapter
 import com.example.wavimobile.Models.SuKien
-import kotlinx.android.synthetic.main.activity_man_hinh_chinh_nhom_thanh_vien.*
 import kotlinx.android.synthetic.main.activity_man_hinh_chinh_su_kien.*
-import kotlinx.android.synthetic.main.activity_man_hinh_chinh_su_kien.bt_back
-import kotlinx.android.synthetic.main.activity_man_hinh_chinh_su_kien.rcv
 
-class ManHinhChinhSuKienActivity : AppCompatActivity() {
+class SuKienVideoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_man_hinh_chinh_su_kien)
+        setContentView(R.layout.activity_su_kien_video)
         bt_back.setOnClickListener{
             onBackPressed()
         }
@@ -35,13 +32,8 @@ class ManHinhChinhSuKienActivity : AppCompatActivity() {
             adapter=adap1
             layoutManager= LinearLayoutManager(context)
         }
-        bt_quay.setOnClickListener {
-            onBackPressed()
-            val intent = Intent(this@ManHinhChinhSuKienActivity, SuKienVideoActivity::class.java)
-            startActivity(intent)
-        }
         bxh.setOnClickListener{
-            val intent = Intent(this@ManHinhChinhSuKienActivity, BXHActivity::class.java)
+            val intent = Intent(this, BXHActivity::class.java)
             startActivity(intent)
         }
     }
