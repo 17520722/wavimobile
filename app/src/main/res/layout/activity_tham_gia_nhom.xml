@@ -94,9 +94,10 @@
                 <Button
                     android:id="@+id/bt_thamGia"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
+                    android:layout_height="42dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="7dp"
                     android:background="@drawable/round_button"
                     android:text="Tham Gia Ngay" />
 
@@ -106,7 +107,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="12dp"
+                android:paddingVertical="10dp"
                 android:background="@color/color_bg_Text"
                 android:orientation="vertical"
                 android:paddingLeft="@dimen/textpading">
@@ -128,11 +130,12 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="7dp"
                 android:background="@color/color_bg_Text"
                 android:gravity=""
                 android:orientation="vertical"
-                android:paddingLeft="@dimen/textpading">
+                android:paddingLeft="@dimen/textpading"
+                android:paddingVertical="10dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -207,10 +210,11 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="7dp"
                 android:background="@color/color_bg_Text"
                 android:orientation="vertical"
-                android:paddingLeft="@dimen/textpading">
+                android:paddingLeft="@dimen/textpading"
+                android:paddingVertical="10dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -229,10 +233,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:background="@color/color_bg_Text"
+                android:layout_marginTop="7dp"
                 android:paddingLeft="@dimen/textpading"
+                android:paddingVertical="10dp"
                 android:text="Video Nhóm"
                 android:textColor="@color/color_Text"
                 android:textSize="@dimen/textSize_title" />

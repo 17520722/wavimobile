@@ -90,19 +90,20 @@
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal">
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="7dp">
 
                 <Button
                     android:id="@+id/bt_them"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="42dp"
                     android:background="@drawable/round_button_them"
-                    android:padding="5dp"
+                    android:paddingHorizontal="10dp"
                     android:text="Thêm thành viên" />
 
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="42dp"
                     android:layout_toRightOf="@id/bt_them"
                     android:background="@drawable/round_button_roi"
                     android:foreground="@drawable/ic_run"
@@ -116,7 +117,8 @@
                 android:layout_marginTop="10dp"
                 android:background="@color/color_bg_Text"
                 android:orientation="vertical"
-                android:paddingLeft="@dimen/textpading">
+                android:paddingLeft="@dimen/textpading"
+                android:paddingVertical="10dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -135,11 +137,12 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="7dp"
                 android:background="@color/color_bg_Text"
                 android:gravity=""
                 android:orientation="vertical"
-                android:paddingLeft="@dimen/textpading">
+                android:paddingLeft="@dimen/textpading"
+                android:paddingVertical="10dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -214,10 +217,11 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="7dp"
                 android:background="@color/color_bg_Text"
                 android:orientation="vertical"
-                android:paddingLeft="@dimen/textpading">
+                android:paddingLeft="@dimen/textpading"
+                android:paddingVertical="10dp">
 
                 <TextView
                     android:layout_width="wrap_content"

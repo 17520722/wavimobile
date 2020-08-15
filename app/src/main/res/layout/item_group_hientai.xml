@@ -9,17 +9,18 @@
         android:id="@+id/item_group"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="3dp">
+        android:layout_marginTop="5dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@color/color_item_list">
+            android:layout_height="72dp"
+            android:background="@color/color_item_list"
+            android:paddingVertical="5dp">
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/image_avatar"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="10dp"
                 android:elevation="3dp"
@@ -47,12 +48,12 @@
                     android:layout_marginLeft="10dp"
                     android:text=" Tên nhóm"
                     android:textColor="@color/color_white"
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
 
                 <TextView
                     android:id="@+id/tV_SoVideo"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:gravity="start|center_vertical"
                     android:text="Có x video mới"
