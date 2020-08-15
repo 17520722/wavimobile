@@ -8,13 +8,12 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="3dp">
+        android:layout_marginTop="5dp">
 
-        <RelativeLayout
-            android:id="@+id/RL"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_alignParentBottom="true"
+            android:layout_height="70dp"
+
             android:background="@color/color_item_list">
 
             <TextView
@@ -24,92 +23,109 @@
                 android:layout_centerVertical="true"
                 android:text="1"
                 android:textColor="@color/color_white"
-                android:textSize="30dp" />
+                android:textSize="20dp"
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/image_avatar"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_toRightOf="@id/stt"
-                android:layout_centerVertical="true"
-                android:layout_marginTop="15dp"
-                android:elevation="3dp"
-                android:src="@drawable/anh"
-                app:civ_border_color="#61B6FA"
-                app:civ_border_width="2dp" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/RL"
+                app:layout_constraintTop_toTopOf="parent" />
 
-            <LinearLayout
+            <RelativeLayout
+                android:id="@+id/RL"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_toRightOf="@id/image_avatar"
-                android:gravity="center_vertical"
-                android:orientation="vertical"
-                android:paddingLeft="20dp">
+                android:layout_marginLeft="40dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Tên sự kiện"
-                    android:textColor="@color/color_white"
-                    android:textSize="@dimen/textSize_title" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image_avatar"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
 
-                <RelativeLayout
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="15dp"
+                    android:elevation="3dp"
+                    android:src="@drawable/anh"
+                    app:civ_border_color="#61B6FA"
+                    app:civ_border_width="2dp" />
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/image_avatar"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp">
 
-                    <LinearLayout
-                        android:id="@+id/LL1"
+                    <TextView
+                        android:id="@+id/txt_tenTV"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Tên thành viên"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/textSize_title" />
 
-                        android:layout_alignParentLeft="true"
-                        android:layout_margin="10dp"
-                        android:orientation="horizontal">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-                        <ImageView
+                        <LinearLayout
+                            android:id="@+id/LL1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/ic_heart"
-                            android:tint="@color/color_white" />
 
-                        <TextView
+                            android:layout_alignParentLeft="true"
+                            android:layout_margin="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_heart"
+                                android:tint="@color/color_white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:text="10"
+                                android:textColor="@color/color_white" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LL2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginLeft="10dp"
-                            android:text="10"
-                            android:textColor="@color/color_white" />
-                    </LinearLayout>
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="10dp"
+                            android:layout_toRightOf="@id/LL1"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal">
 
-                    <LinearLayout
-                        android:id="@+id/LL2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:layout_margin="10dp"
-                        android:layout_toRightOf="@id/LL1"
-                        android:gravity="center_horizontal"
-                        android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_view"
+                                android:tint="@color/color_white" />
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/ic_view"
-                            android:tint="@color/color_white" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:text="112120"
+                                android:textColor="@color/color_white" />
+                        </LinearLayout>
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginLeft="10dp"
-                            android:text="112120"
-                            android:textColor="@color/color_white" />
-                    </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
 
-                </RelativeLayout>
-            </LinearLayout>
+            </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-        </RelativeLayout>
 
     </androidx.cardview.widget.CardView>
 </LinearLayout>

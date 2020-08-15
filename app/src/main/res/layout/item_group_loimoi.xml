@@ -1,75 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cardGroup"
-        android:layout_marginTop="3dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        >
+        android:layout_marginTop="3dp">
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="@color/color_item_list">
+
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/image_avatar"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:elevation="3dp"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="10dp"
-                app:civ_border_color="#61B6FA"
-                app:civ_border_width="2dp"
+                android:elevation="3dp"
                 android:src="@drawable/anh"
-                />
+                app:civ_border_color="#61B6FA"
+                app:civ_border_width="2dp" />
 
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
                 android:layout_alignTop="@id/image_avatar"
                 android:layout_alignBottom="@+id/image_avatar"
-                android:layout_toRightOf="@id/image_avatar"
                 android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/image_avatar"
+                android:gravity="center_vertical"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp">
-                    <TextView
-                        android:id="@+id/tV_Name_loimoi"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Tên nhóm mới"
-                        android:textColor="@color/color_white"
-                        android:layout_centerVertical="true"
-                        android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tV_Name_loimoi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Tên nhóm mới"
+                    android:textColor="@color/color_white"
+                    android:textSize="18sp" />
+
                 <LinearLayout
-                    android:orientation="horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_alignParentRight="true">
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
 
 
                     <Button
                         android:id="@+id/bt_ChapNhan"
                         android:layout_width="wrap_content"
                         android:layout_height="25dp"
-                        android:layout_marginRight="6dp"
-                        android:text="Đồng ý"
-                        android:background="@drawable/round_button"
-                        android:textSize="14sp"
                         android:layout_gravity="center_vertical"
-                        />
+                        android:layout_marginRight="6dp"
+                        android:background="@drawable/round_button"
+                        android:text="Đồng ý"
+                        android:textSize="14sp" />
 
                     <ImageView
                         android:id="@+id/bt_TuChoi"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        android:background="@drawable/round_button_x"
+                        android:layout_gravity="center_vertical"
                         android:layout_marginRight="6dp"
-                        android:src="@drawable/ic_x"
-                        android:layout_gravity="center_vertical"/>
+                        android:background="@drawable/round_button_x"
+                        android:src="@drawable/ic_x" />
                 </LinearLayout>
             </RelativeLayout>
         </RelativeLayout>

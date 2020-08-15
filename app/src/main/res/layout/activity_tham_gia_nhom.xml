@@ -92,7 +92,7 @@
                 android:layout_gravity="center_horizontal">
 
                 <Button
-                    android:id="@+id/bt_them"
+                    android:id="@+id/bt_thamGia"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingLeft="5dp"

@@ -20,6 +20,9 @@ class ThamGiaNhomActivity : AppCompatActivity() {
         bt_back.setOnClickListener {
             onBackPressed()
         }
+        bt_thamGia.setOnClickListener{
+            startActivity(Intent(this,ManHinhChinhNhomThanhVienActivity::class.java))
+        }
         var list1 = ArrayList<SuKien>()
         list1.add(SuKien("", "", 0))
         list1.add(SuKien("", "", 0))

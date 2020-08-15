@@ -68,7 +68,14 @@ class EventFragment : Fragment() {
         var adap2 = EventQuanTamAdapter(list2)
 
         if (flag == 0) {
+            tv_eNoiBat.setTextColor(Color.parseColor(colorSelected))
+            tv_eQuanTam.setTextColor(Color.parseColor(colorHint))
             rcv.adapter = adap1
+        }
+        else{
+            tv_eNoiBat.setTextColor(Color.parseColor(colorHint))
+            tv_eQuanTam.setTextColor(Color.parseColor(colorSelected))
+            rcv.adapter = adap2
         }
         tv_eNoiBat.setOnClickListener {
             if (!bNoiBat) {
@@ -77,6 +84,7 @@ class EventFragment : Fragment() {
                 rcv?.adapter?.notifyDataSetChanged()
                 tv_eNoiBat.setTextColor(Color.parseColor(colorSelected))
                 tv_eQuanTam.setTextColor(Color.parseColor(colorHint))
+                flag=0
                 bNoiBat = true
             }
         }
@@ -87,6 +95,7 @@ class EventFragment : Fragment() {
                 rcv?.adapter?.notifyDataSetChanged()
                 tv_eNoiBat.setTextColor(Color.parseColor(colorHint))
                 tv_eQuanTam.setTextColor(Color.parseColor(colorSelected))
+                flag=1
                 bNoiBat = false
             }
         }

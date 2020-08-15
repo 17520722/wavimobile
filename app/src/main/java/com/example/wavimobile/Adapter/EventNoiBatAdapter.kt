@@ -5,6 +5,7 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.wavimobile.ManHinhChinhSuKienActivity
@@ -29,7 +30,10 @@ class EventNoiBatAdapter(val list: ArrayList<SuKien>) :
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         var nhom: SuKien = list[position]
         holder?.carItem.setOnClickListener {
-            context.startActivity(Intent(context, ManHinhChinhSuKienActivity::class.java))
+            val intent = Intent(context, ManHinhChinhSuKienActivity::class.java)
+            intent.putExtra("text","100 người đã tham gia")
+            context.startActivity(intent)
+
         }
     }
 

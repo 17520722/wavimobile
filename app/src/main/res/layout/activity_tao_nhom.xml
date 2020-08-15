@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <RelativeLayout
@@ -71,13 +71,13 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
+                    android:background="@drawable/round_creategroup"
                     android:hint="Tên Nhóm"
                     android:padding="10dp"
-                    android:textSize="@dimen/textSize_title"
-                    android:background="@drawable/round_creategroup"
+                    android:paddingLeft="20dp"
                     android:paddingTop="12dp"
                     android:paddingBottom="12dp"
-                    android:paddingLeft="20dp" />
+                    android:textSize="@dimen/textSize_title" />
 
                 <Spinner
                     android:id="@+id/edQuyenRiengTu"
@@ -91,10 +91,10 @@
                     android:foreground="@drawable/ic_down"
                     android:foregroundGravity="center_vertical|right"
                     android:foregroundTint="#585858"
-                    android:paddingTop="15dp"
-                    android:paddingBottom="15dp"
                     android:paddingLeft="20dp"
+                    android:paddingTop="15dp"
                     android:paddingRight="20dp"
+                    android:paddingBottom="15dp"
                     android:spinnerMode="dropdown"
                     android:visibility="gone" />
 
@@ -107,9 +107,9 @@
                     android:layout_marginRight="20dp"
                     android:background="@drawable/round_creategroup"
                     android:hint="Mô tả"
+                    android:paddingLeft="20dp"
                     android:paddingTop="12dp"
                     android:paddingBottom="12dp"
-                    android:paddingLeft="20dp"
                     android:textSize="@dimen/textSize_title"
                     android:visibility="gone" />
 
